@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box; /*no crezca el margen */
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: rgba(240, 240, 240, 0.832);
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}/*Quitar las listas*/
+li{font-size: 1.2em;}
+
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid #FA7D09;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #EF5B0C;
+}
+
+button:hover{
+    background-color: #fc891d;
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: #EF5B0C;
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #FFF7F7;
+    font-size: 1.45em;
+    
+}
+header .contenedor-uno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   padding-bottom: 25px; 
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF7F7;
+}
+header a:hover{
+    color: #503e2d;
+}
+#jumbotron{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/partes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.textbox{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 1px;
+    width: 50%;
+    margin: 5px;
+}
+
+#blog-modelos {
+    padding: 30px;
+    background-color: #EF5B0C;
+    color: black;
+    text-align: center;
+}
+#blog-modelos .contenedor-blog{
+    padding: 100px 0px;
+}
+#blog-modelos h2{
+    margin-top: 0;
+
+}
+#blog-modelos p{
+    display: none;
+}
+
+#blog-modelos .blog{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+ .img-car{
+    display: grid;
+    grid-template-columns: repeat(5, 20%); /*cauntas veces se repite una columna*/
+    gap: 20px;
+    width: 50%;
+   
+}
+#blog-modelos{
+    display: flex;
+    justify-content: center;
+}
+#blog-modelos p{
+    display: block;
+}
+
+/*.blog:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/08-Mazda-Tribute.jpg");
+   
+}
+*/
+/*
+.blog:first-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/DODGE-ATTITUDE-1.2-SE-CVT.jpg");
+
+}*/
+/*
+.blog:first-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/pick-up-nissan-NP300.jpg");
+
+}
+*/
+#servicios{
+
+}
+#servicios .contenedor{
+    text-align: center;
+    padding: 200px 12px;
+}
+#servicios li{
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+
+
+.conteiner{
+    background-color: #EF5B0C;
+    max-width: 70%;
+    margin: 0 auto;
+    height: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+}
+.card{
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+
+
+}
+.card_img img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.card_body{
+    padding: 26px 20px 36px 20px;
+}
+.card_title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    
+}
+.card_body{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+@media only screen and (max-width: 1441px) and (min-width: 1025px){
+    .conteiner{
+        max-width: 80%;
+
+    }
+    .grid{
+        gap: 2%
+    }
+    .card{
+        padding: 15px;
+    }
+    .card_body{
+        padding: 15px;
+    }
+    .card_title{
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+    .card_body p{
+        font-size: 16px;
+    }
+    a.read_more {
+        padding: 19px 0;
+        width: 60%;
+        font-size: 11px;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:1024px ){
+.grid{
+    grid-template-columns: 1fr;
+}
+}
+
+@media( min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .contenedor-uno{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    #servicios .contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    #servicios .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+       justify-content: center;
+       padding-left: 30px;
+    }
+    #servicios .contenedor .img-contenedor{
+        background-image:url("img/cajaenvios.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+    
+    }
+
+
+
+}
+
+.footer{
+    padding: 40px;
+    background-color: gray;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #EF5B0C;
+}
+.footer .social img{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75px;
+
+}
+.footer .social a:hover{
+    opacity: 0.5;
+}
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+color: inherit;
+text-decoration: none;
+opacity: 0.8;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul li a:hover{
+    opacity: 0.6;
+}
+
+.footer .cr{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(230, 228, 228);
+}
